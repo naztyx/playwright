@@ -3,7 +3,7 @@ const config = {
     workers: 1, //run the tests sequentially i.e, one at a time
     use: { 
         baseURL: 'https://bitheap.tech',
-        headless: false,
+        headless: true,
         slowMo: 2000, //add 2 seconds delay between actions
     },
     projects:[
