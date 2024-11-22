@@ -23,7 +23,7 @@ dotenv.config();
 
 test.describe('My Test Suite', () => {
     test('My test Case', async({}) => {
-        const browser = await chromium.launch();
+        const browser = await chromium.launch(); //the list of browsers in congig file under projects overrides this and runs for each
         const page = await browser.newPage();
 
         await authenticatepage(page);
