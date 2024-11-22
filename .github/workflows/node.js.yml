@@ -30,6 +30,6 @@ jobs:
     - run: npx playwright install
     - run: npx playwright test
     env:
-          BITHEAP_USERNAME: playwright
-          PASS: playwright
+          BITHEAP_USERNAME: ${{ secrets.BITHEAP_USERNAME }}
+          PASS: ${{ secrets.PASS }}
           
